@@ -24,6 +24,7 @@ export default createGlobalStyle`
     color: #222;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+
   }
 
   h1, h2, span, p, button{

@@ -73,6 +73,7 @@ export const DownloadButton = styled.button.attrs((props => ({
     font-weight: bold;
     background: ${props => props.disabled ? darken(0.5, '#FECF43') : '#FECF43' };
     transition: background 0.2s;
+    margin-bottom: 75px;
     cursor: pointer;
 
     &[disabled]{
