@@ -21,8 +21,10 @@ export default class Main extends Component{
     }
 
     handleDownload = async () => {
+        console.log('this')
         const a = document.getElementsByTagName('a')
         a[0].click();
+        this.setState({url: '', disabled: true})
     }
 
     renderDragMessage = (isDragActive, isDragReject) => {
