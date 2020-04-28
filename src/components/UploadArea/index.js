@@ -14,9 +14,7 @@ export default class Main extends Component{
 
     handleFileUpload = async (file) => {
         var bodyFormData = new FormData();
-        console.log(file[0])
         bodyFormData.append('file', file[0])
-        console.log(bodyFormData.getAll('file'))
         const response = await api.post(`${process.env.REACT_APP_API_URL}/kml-to-xls`, bodyFormData, {headers: {'Content-Type': 'multipart/form-data'}})
 
         this.setState({url: response.data.url, disabled: false})
@@ -24,7 +22,6 @@ export default class Main extends Component{
 
     handleDownload = async () => {
         const a = document.getElementsByTagName('a')
-        console.log(a)
         a[0].click();
     }
 
